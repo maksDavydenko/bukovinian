@@ -332,15 +332,9 @@ li {
   border-radius: 2px; }
 
 .main-slider__inner {
-  position: relative; }
-.main-slider__nav-wrap {
-  top: 50%;
-  right: 0;
-  position: absolute; }
-.main-slider__nav {
-  position: absolute;
-  top: 50%;
-  right: 0; }
+  position: relative;
+  max-width: 1157px;
+  margin: auto; }
 .main-slider__block {
   position: absolute;
   top: 87px;
@@ -352,6 +346,11 @@ li {
   text-transform: uppercase;
   color: #032C4B;
   margin-bottom: 53px; }
+  .main-slider__title span {
+    padding: 0 11px;
+    line-height: 55px;
+    color: #fff;
+    background: #032C4B; }
 
 .slick-dots {
   position: absolute;
@@ -360,8 +359,41 @@ li {
   z-index: 2; }
 
 .slider-more-btn {
-  padding: 15px 40px;
+  padding: 12px 43px;
   text-transform: uppercase;
-  color: #032C4B; }
+  color: #032C4B;
+  font-size: 18px;
+  color: #032C4B;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.main-slider__items {
+  position: relative;
+  top: -60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.main-slider-item {
+  -ms-flex-preferred-size: 222px;
+      flex-basis: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px 16px;
+  background-color: rgba(251, 251, 251, 0.8);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1)); }
+  .main-slider-item__icon {
+    margin-right: 15px; }
+  .main-slider-item__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #032C4B; }
 
 /*# sourceMappingURL=style.css.map */
