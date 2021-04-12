@@ -9,9 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.content {
-  height: 4000px;
-}
+
 
 a {
   text-decoration: none;
@@ -31,7 +29,7 @@ li {
 .header {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 9;
 }
 
 .header-nav {
@@ -44,7 +42,21 @@ li {
   align-items: center;
   padding: 15px 0;
 }
+.header-nav__item {
+  position: relative;
+  margin: 0 18px;
 
+  &::after{
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -18px;
+    position: absolute;
+    height: 29px;
+    width: 1px;
+    background-color: #032C4B;;
+    content: "";
+  }
+}
 .contact-items-wrap {
   display: flex;
 }
@@ -136,12 +148,49 @@ color: #032C4B;
 }
 
 .search-block {
+  width: 180px;
+  display: flex;
+  max-height: 19px;
+  &__input {
+    width: 153px;
+    padding: 5px 8px;
+    border: 1px solid #032C4B;
+    border-radius: 4px;
+    font-size: 10px;
+    color: #525252;
+    outline: none;
+
+    &::placeholder {
+      font-size: 10px;
+    color: #525252;
+    }
+  }
   &__button{
+    position: relative;
+    left: -4px;
+    padding: 1px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #032C4B;
     border: 1px solid #000000;
-    box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 2px 2px 0px;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    img {
+      width: 11px;
+      height: 11px;
+    }
+  }
+}
+
+.change-language {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 18px;
+  img {
+    margin-left: 4px;
   }
 }
 
@@ -185,6 +234,31 @@ color: #032C4B;
   }
 }
 
+
+.btn {
+  width: 136px;
+  padding: 4px;
+  text-transform: uppercase;
+  border: 2px solid #032C4B;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn--dark {
+  color: #EDEDED;
+  background: #032C4B;
+}
+
+.btn-light {
+  color: #032C4B;
+  background: transparent;
+}
+
+.btn--send {
+  width: 96px;
+}
 .menu-nav__link
 .btn {
   width: 136px;
@@ -249,6 +323,16 @@ color: #032C4B;
   &__inner{
     position: relative;
   }
+  &__nav-wrap {
+    top: 50%;
+    right: 0;
+    position: absolute;
+  }
+  &__nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
 &__block {
   position: absolute;
   top: 87px;
@@ -272,4 +356,10 @@ color: #032C4B;
   top: 0;
   right: 0;
     z-index: 2;;
+}
+
+.slider-more-btn {
+  padding: 15px 40px;
+  text-transform: uppercase;
+  color: #032C4B;
 }

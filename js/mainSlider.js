@@ -11,6 +11,6 @@ $(".js-main-slider").slick({
   arrows: false
 });
 
-$(".slick-dots").wrap("<div class='container'><div class='main-slider__inner'><div id='next-btn'>next</div><div id='prev>prev</div></div></div>")
+$(".slick-dots").wrap("<div class='container'><div class='main-slider__nav-wrap'><div class='main-slider__nav'><div id='next-btn'></div> <div id='prev'></div></div></div>")
 
 })
