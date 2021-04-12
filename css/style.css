@@ -40,6 +40,7 @@ li {
 .header-panel__inner {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .header-panel__list {
@@ -62,6 +63,14 @@ li {
     display: flex;
 }
 
+.header-links li:not(:first-child){
+    margin-left: 5px;
+}
+
+.header-links img{
+    width: 9px;
+    height: 9px;
+}
 .btn {
     width: 136px;
     padding: 4px;

@@ -12,7 +12,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -20,10 +20,6 @@
         <div class="header-panel">
             <div class="container">
                 <div class="header-panel__inner">
-                    <a href="#" class="logo">
-                        <img src="./img/icons/logo 1.svg" alt="">
-                        <h3>Bukovinian State Medical University</h3>
-                    </a>
                 <ul class="header-panel__list">
                     <li class="header-panel__item">
                         <a href="" class="header-panel__link">For the Student</a>
@@ -47,78 +43,17 @@
         </div>
             </div>
         </div>
+
         <nav class="header-nav">
             <div class="container">
                 <div class="header-nav__list">
-                    <div class="contact-items-wrap">
-                        <a class="contact-item" href="#">
-                            <img src="./img/icons/phone.svg" alt="" class="contact-item__icon">
-                            <div class="contact-item__inner">
-                                    <div class="contact-item__name">Phone: </div>
-                                    <div class="contact-item__info">+38 (072) 55-37-54</div>
-                            </div>
-                        </a>
-                        <a class="contact-item" href="#">
-                            <img src="./img/icons/message.svg" alt="" class="contact-item__icon">
-                            <div class="contact-item__inner">
-                                    <div class="contact-item__name">Email: </div>
-                                    <div class="contact-item__info">office@bsmu.edu.ua</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="search-block">
-                        <input type="text">
-                        <button class="search-block__button"><img src="./img/icons/search.svg" alt="search"></button>
-                    </div>
+                    <a href="tel:" class="header-nav__item">
+                        +38 (072) 55-37-54
+                    </a>
                 </div>
             </div>
         </nav>
-        <nav class="menu-nav">
-            <div class="container">
-            <ul class="menu-nav__list">
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link"> GENERAL INFORMATION </a>
-                </li>
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link"> ADMISSION</a>
-                </li>
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link">EDUCATION </a>
-                </li>
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link">SCIENCE</a>
-                </li>
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link">MEDICINE</a>
-                </li>
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link">ADMISSION PARTNER</a>
-                </li>
-            </ul>
-        </div>
-        </nav>
     </header>
-    <div class="main-slider">
-        <div class="container">
-        <div class="main-slider__inner">
-            <div class="main-slider__block">
-                <h1 class="main-slider__title">
-                    <span>Admisions</span>
-                      are open for inteak 2021-2022</h1>
-                <a href="#" class="btn">READ MORE</a>
-            </div>
-        </div>
-    </div>
-        <div class="main-slider__content js-main-slider">
-            <img src="./img/photo/bg.png" alt="photo">
-            <img src="./img/photo/bg.png" alt="photo">
-            <img src="./img/photo/bg.png" alt="photo">
-            <img src="./img/photo/bg.png" alt="photo">
-            <img src="./img/photo/bg.png" alt="photo">
-        </div>
-        <div class="main-slider__inner"></div>
-    </div>
 <!--    <div class="header-slider">-->
 <!--        <img src="./img/photo/bg.png" alt="img">-->
 <!--        <img src="./img/photo/bg.png" alt="img">-->
@@ -140,9 +75,36 @@
         </form>
     </div>
 </footer>
-    <!-- <script src="./dist/main.js"></script> -->
-<script src="./js/mainSlider.js">
-  
+    <script src="./main.js"></script>
+<script>
+    $(".header-slider").slick({
+
+        // normal options...
+        slidesToShow: 3,
+        // the magic
+        responsive: [{
+
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                infinite: true
+            }
+
+        }, {
+
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+
+            }
+
+        }, {
+
+            breakpoint: 300,
+            settings: "unslick" // destroys slick
+
+        }]
+    });
 </script>
 </body>
 </html>
