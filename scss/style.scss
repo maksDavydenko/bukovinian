@@ -7,6 +7,7 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 
@@ -234,7 +235,21 @@ color: #032C4B;
   }
 }
 
-
+#scrollTop {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  width: 43px;
+  height: 43px;
+  background: #032C4B;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &::after {
+    content: url('../img/icons/smallArrowUpLight.svg');
+  }
+}
 .btn {
   width: 136px;
   padding: 4px;
@@ -320,6 +335,7 @@ color: #032C4B;
 //content
 
 .main-slider {
+  margin-bottom: 80px;
   &__inner{
     position: relative;
     max-width: 1157px;
@@ -395,6 +411,11 @@ color: #032C4B;
 }
 }
 
+.title-item  {
+  font-size: 55px;
+  text-align: center;
+  color: #032C4B;
+}
 
 .title-shadow {
   display: inline;
@@ -427,7 +448,7 @@ color: #032C4B;
 .faculties {
   display: flex;
   justify-content: space-between;
-
+  margin-bottom: 107px;
   &__block-text {
     max-width: 330px;;
   }
@@ -511,4 +532,84 @@ color: #032C4B;
 
 .faculties-item:hover .faculties-item__text::after{
   opacity: 1;
+}
+
+.figures {
+margin-bottom: 70px;
+}
+
+.figures-title {
+  margin-bottom: 45px;
+}
+
+.figures-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.figures-item {
+  position: relative;
+  flex-basis: 249px;
+  padding: 32px 15px 35px;
+  border: 4px solid #525252;
+  text-align: center;
+  transition: 0.3s;
+
+  &::after {
+    content: url("../img/icons/triengle.svg");
+    position: absolute;
+    bottom: -8px;
+    right: -4px;
+    // border: 20px solid transparent; border-right: 20px solid #BFBFBF; border-bottom: 20px solid #BFBFBF;
+    transition: 0.3s;
+  }
+  &__title {
+    position: relative;
+    margin: 32px 0 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #525252;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -8px;
+      transform: translate(-50%, 0);
+      width: 99px;
+      height: 3px;
+      background: #BFBFBF;
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__text{
+    font-size: 15px;
+    text-align: justify;
+    letter-spacing: -0.05em;
+    text-transform: capitalize;
+    color: #525252;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.figures-item:hover {
+  border: 4px solid #032C4B;
+}
+
+.figures-item:hover::after {
+  transition: 0.3s;
+  content: url("../img/icons/triengle\ active.svg")
+
+}
+
+.figures-item:hover .figures-item__title {
+  color:#032C4B;
+  font-size: 20px;
+}
+
+.figures-item:hover .figures-item__title::after {
+  background: linear-gradient(90deg, #EF0000 0%, #C20C00 100%);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
