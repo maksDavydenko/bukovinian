@@ -7,7 +7,9 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  min-height: -webkit-fill-available; }
 
 a {
   text-decoration: none; }
@@ -257,6 +259,7 @@ li {
   right: 18px;
   width: 43px;
   height: 43px;
+  z-index: 2;
   background: #032C4B;
   display: none;
   -webkit-box-pack: center;
@@ -472,16 +475,6 @@ li {
       -webkit-transition: 0.3s;
       transition: 0.3s; }
 
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .faculties-item__text::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.1);
-    z-index: -1; } }
 .faculties-item:hover .faculties-item__text {
   padding: 13px 14px 40px; }
 
@@ -630,5 +623,43 @@ li {
 .contact-block {
   padding: 30px;
   border: 2px solid #EDEDED; }
+
+.form-block {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding: 11px 0;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px); }
+
+.form-item {
+  margin: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.form-item__title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #525252; }
+
+.form-item__input {
+  -ms-flex-preferred-size: 210px;
+      flex-basis: 210px;
+  border: 1px solid #032C4B;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 2px; }
 
 /*# sourceMappingURL=style.css.map */
