@@ -300,36 +300,7 @@ color: #032C4B;
   width: 96px;
 }
 
-.footer {
-  position: sticky;
-  bottom: 0;
-  padding: 11px 0;
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
-}
 
-.footer-form {
-  margin: 0 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer-form__title {
-  font-weight: bold;
-  font-size: 20px;
-  color: #525252;
-}
-
-.footer-form__input {
-  flex-basis: 210px;
-  border: 1px solid #032C4B;
-  padding: 5px 10px;
-  font-size: 15px;
-  border-radius: 2px;
-}
 
 
 //content
@@ -505,7 +476,7 @@ color: #032C4B;
       position: absolute;
       content: url('../img/icons/downArrow.svg');
       left: 50%;
-      bottom: 10px;
+      bottom: 13px;
       transform: translate(-50%, 0);
       transition: 0.3s;
     }
@@ -527,7 +498,7 @@ color: #032C4B;
 }
 }
 .faculties-item:hover .faculties-item__text{
-  padding: 25px 14px 40px;
+  padding: 13px 14px 40px;
 }
 
 .faculties-item:hover .faculties-item__text::after{
@@ -613,3 +584,59 @@ margin-bottom: 70px;
   background: linear-gradient(90deg, #EF0000 0%, #C20C00 100%);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
+
+
+.footer {
+  background: #032C4B;
+}
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+}
+.info-block {
+  color: #EDEDED;
+  font-size: 18px;
+
+  &__title {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    align-items: center;
+    color: #EDEDED;
+  }
+}
+
+// .footer {
+//   position: sticky;
+//   bottom: 0;
+//   padding: 11px 0;
+//   background: rgba(255, 255, 255, 0.6);
+//   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+//   backdrop-filter: blur(15px);
+// }
+
+// .footer-form {
+//   margin: 0 50px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+// }
+
+// .footer-form__title {
+//   font-weight: bold;
+//   font-size: 20px;
+//   color: #525252;
+// }
+
+// .footer-form__input {
+//   flex-basis: 210px;
+//   border: 1px solid #032C4B;
+//   padding: 5px 10px;
+//   font-size: 15px;
+//   border-radius: 2px;
+// }

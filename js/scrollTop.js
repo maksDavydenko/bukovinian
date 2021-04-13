@@ -14,5 +14,5 @@ document.addEventListener('scroll', e =>{
   btnToTop.addEventListener('click', () => {
     window.scrollTo( 0, 0 );
   })
-
+  lightGallery(document.getElementById('lightgallery'))
 
