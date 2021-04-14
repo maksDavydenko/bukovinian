@@ -11,7 +11,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/lib/js/lightgallery.min.js"></script>
+    <link rel="stylesheet" href="./css/lightgallery.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/lib/js/lightgallery.min.js"></script> -->
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" href="./scss/style.css">
     <title>Document</title>
@@ -240,27 +241,117 @@
             </a>
         </div>
     </section>
-</div>
-    <!-- <section class="gallery">
+    <section class="faculties">
+        <div class="faculties__block-text">
+            <div class="faculties-title">
+                <h2 class="title-shadow">
+                    Our News
+                </h2>
+            </div>
+            <p class="faculties__text-info">This Black History Month, Meet the Students whose fearlessness has transformed Carolina for the better and This Black History Month, meet the students for the better and This Black History Month, meet the students. and This Black Histor.</p>
+            <a href="#" class="btn btn--dark faculties-btn">READ MORE</a>
+        </div>
+       <div class="faculties__items">
+        <img src="./img/photo/Group 130.png" alt="">
+       </div>
+
+       <div class="switch-blocks">
+           <div class="switch-block switch-block--active">
+            <h3 class="switch-block__title">
+                Shanovny friends
+            </h3>
+            <small class="switch-block__info">
+                Date:31.01.2021
+            </small>
+           </div>
+           <div class="switch-block">
+            <h3 class="switch-block__title">
+                Shanovny friends
+            </h3>
+            <small class="switch-block__info">
+                Date:31.01.2021
+            </small>
+           </div>
+           <div class="switch-block">
+            <h3 class="switch-block__title">
+                Shanovny friends
+            </h3>
+            <small class="switch-block__info">
+                Date:31.01.2021
+            </small>
+           </div>
+           <div class="switch-block">
+            <h3 class="switch-block__title">
+                Shanovny friends
+            </h3>
+            <small class="switch-block__info">
+                Date:31.01.2021
+            </small>
+           </div>
+       </div>
+    </section>
+
+    <section class="gallery">
         <h2 class="title-item gallery-title">Gallery of BSMU</h2>
-        <div class="gallery__items" id="lightgallery">
-            <img src="./img/photo/Rectangle 100.png" alt="photo" class="gallery-item">
-            <img src="./img/photo/Rectangle 101 (1).png" alt="photo" class="gallery-item">
-            <img src="./img/photo/Rectangle 101.png" alt="photo" class="gallery-item">
+        <div class="gallery-items" id="lightgallery">
+            <div class="gallery-left">
+                <li data-src="./img/photo/Rectangle 100.png" class="img_1">
+                    <img src="./img/photo/Rectangle 100.png" alt="photo" class="gallery-item">
+                </li>
+                <li data-src="./img/photo/Rectangle 101 (1).png" class="img_2">
+                    <img src="./img/photo/Rectangle 102.png" alt="photo" class="gallery-item">
+                </li>
+            </div>
+              <div class="gallery-right">
+                  <div class="gallery-right-item gallery-right-item--top">
+                    <li data-src="./img/photo/Rectangle 105.png" class="img_3">
+                        <img src="./img/photo/Rectangle 101 (1).png" alt="photo" class="gallery-item">
+                    </li>
+                    <li data-src="./img/photo/Rectangle 107.png" class="img_4">
+                        <img src="./img/photo/Rectangle 105.png" alt="photo" class="gallery-item">
+                    </li>
+                    <li data-src="./img/photo/Rectangle 100.png" class="img_5">
+                        <img src="./img/photo/Rectangle 107.png" alt="photo" class="gallery-item">
+                    </li>
+                    <!-- <li data-src="./img/photo/Rectangle 101 (1).png" class="img_6">
+                        <img src="./img/photo/Rectangle 101 (1).png" alt="photo" class="gallery-item">
+                    </li> -->
+                  </div>
+                  <div class="gallery-right-item gallery-right-item--bottom">
+                    <li data-src="./img/photo/Rectangle 105.png" class="img_3">
+                        <img src="./img/photo/Rectangle 103.png" alt="photo" class="gallery-item">
+                    </li>
+                    <li data-src="./img/photo/Rectangle 107.png" class="img_4">
+                        <img src="./img/photo/Rectangle 104.png" alt="photo" class="gallery-item">
+                    </li>
+                        <li data-src="./img/photo/Rectangle 100.png" class="img_5">
+                            <img src="./img/photo/Rectangle 106.png" alt="photo" class="gallery-item">
+                        </li>
+                        <li data-src="./img/photo/Rectangle 101 (1).png" class="img_6">
+                            <img src="./img/photo/Rectangle 108.png" alt="photo" class="gallery-item">
+                        </li>
+                  </div>
+              </div>
+               
+                
+         
+            <!-- <img src="./img/photo/Rectangle 100.png" alt="photo" class="gallery-item"> -->
+        
+            <!-- <img src="./img/photo/Rectangle 101.png" alt="photo" class="gallery-item">
             <img src="./img/photo/Rectangle 102.png" alt="photo" class="gallery-item">
             <img src="./img/photo/Rectangle 103.png" alt="photo" class="gallery-item">
             <img src="./img/photo/Rectangle 104.png" alt="photo" class="gallery-item">
             <img src="./img/photo/Rectangle 105.png" alt="photo" class="gallery-item">
             <img src="./img/photo/Rectangle 106.png" alt="photo" class="gallery-item">
             <img src="./img/photo/Rectangle 107.png" alt="photo" class="gallery-item">
-            <img src="./img/photo/Rectangle 108.png" alt="photo" class="gallery-item">
+            <img src="./img/photo/Rectangle 108.png" alt="photo" class="gallery-item"> -->
         </div>
-        <a href="" class="btn gallery-btn">All gallery</a>
+        <a href="#" class="btn gallery-btn">All gallery</a>
     </section>
-</div> -->
+</div>
+</div>
 
-
-<footer class="form-block">
+<div class="form-block">
     <div class="container">
         <form action="#" class="form-item">
             <h3 class="form-item__title">
@@ -272,8 +363,7 @@
             <button class="btn btn--dark btn--send">Send</button>
         </form>
     </div>
-</footer>
-    <!-- <script src="./dist/main.js"></script> -->
+</div>
 
     <footer class="footer">
         <div class="container">
@@ -365,6 +455,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/lightgallery.min.js"></script>
 <script src="./js/mainSlider.js"></script>
 <script src="./js/scrollTop.js"></script>
   
