@@ -316,7 +316,8 @@ li {
   width: 96px; }
 
 .main-slider {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  position: relative; }
   .main-slider__inner {
     position: relative;
     max-width: 1157px;
@@ -338,11 +339,55 @@ li {
       color: #fff;
       background: #032C4B; }
 
-.slick-dots {
+.main-slider__nav {
   position: absolute;
-  top: 0;
+  top: 132px;
   right: 0;
   z-index: 2; }
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .slick-dots button {
+    width: 29px;
+    height: 29px;
+    margin: 10px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #032C4B;
+    cursor: pointer;
+    border-radius: 50%; }
+
+.controls-btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.slick-active button {
+  background: #032C4B;
+  color: #fff; }
 
 .slider-more-btn {
   padding: 12px 43px;
