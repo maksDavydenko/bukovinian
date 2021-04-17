@@ -15,5 +15,4 @@ document.addEventListener('scroll', e =>{
     window.scrollTo( 0, 0 );
   })
   
-  lightGallery(document.getElementById('lightgallery'))
 
