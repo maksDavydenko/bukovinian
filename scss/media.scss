@@ -1,0 +1,121 @@
+@media screen and (max-width: 1425px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu-nav {
+        padding: 18px 0;
+        &__link {
+          font-size: 16px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1170px) {
+    .menu-nav {
+        padding: 18px 0;
+        &__item {
+            margin-right: 20px;
+        }
+        &__link {
+          font-size: 12px;
+        }
+    }
+    
+    .contact-item {
+        align-items: center;
+    
+    &__icon {
+        height: 20px;
+        width: 20px;
+    }
+    
+    &__name {
+    font-size: 10px;
+    }
+    
+    &__info{
+        font-size: 12px;
+    }
+  }
+    .figures-blocks {
+    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 'first second'
+    }
+
+    .figures-item {
+        display: flex;
+        &__icon {
+            margin-right: 22px;
+        }
+
+        &__title {
+            margin: 0 0 26px;
+            text-align: left;
+            &::after {
+                left: 0;
+                transform: translate(0, 0);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .figures-blocks {
+        grid-template-areas: 'first'
+    }
+
+    .logo {
+        max-width: 112px;
+        max-height: 112px;
+        padding: 10px 7px;
+
+        img {
+            width: 71px;
+            height: 62px;
+        }
+
+        h3{
+            font-size: 10px;
+        }
+    }
+
+
+    .search-block,
+    .header-links {
+        display: none;
+    }
+
+    .mobile-header-nav {
+        display: flex;
+    }
+
+    .header-panel__item:last-child {
+        margin-right: 0;
+    }
+
+    .menu-nav {
+        padding: 10px 0;
+        &__list {
+            width: 100vw;
+            position: absolute;
+            left: 0;
+            flex-direction: column;
+            background: #032C4B;
+            top: 35px;
+            z-index: 99;
+        }
+    
+        &__item {
+            padding: 10px 20px;
+            border-top: 1px solid#EDEDED;
+            margin-right: 0;
+        }
+    }
+   
+}

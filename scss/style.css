@@ -213,6 +213,7 @@ li {
     margin-left: 4px; }
 
 .menu-nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,6 +254,49 @@ li {
       transition: 0.3s; }
     .menu-nav__link:hover:after {
       display: block; }
+
+.mobile-header-nav {
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.menu-nav-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .menu-nav-mobile li {
+    margin-left: 5px; }
+
+.search-mobile {
+  margin: 0 20px;
+  position: relative; }
+  .search-mobile::after {
+    content: "";
+    left: 20px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #fff; }
+  .search-mobile::before {
+    content: "";
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #fff; }
 
 #scrollTop {
   position: fixed;
