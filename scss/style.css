@@ -361,10 +361,8 @@ li {
   width: 96px; }
 
 .main-slider {
-  margin-bottom: 200px;
+  margin-bottom: 135px;
   position: relative; }
-  .main-slider__content {
-    height: 481px; }
   .main-slider__inner {
     position: relative;
     max-width: 1157px;
@@ -379,7 +377,7 @@ li {
     line-height: 64px;
     text-transform: uppercase;
     color: #032C4B;
-    margin-bottom: 53px; }
+    margin: 0 0 53px; }
     .main-slider__title span {
       padding: 0 11px;
       line-height: 55px;
@@ -391,6 +389,12 @@ li {
   top: 132px;
   right: 0;
   z-index: 2; }
+
+.slick-slide {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .slick-dots {
   display: -webkit-box;
@@ -406,7 +410,7 @@ li {
   .slick-dots button {
     width: 29px;
     height: 29px;
-    margin: 10px 0;
+    margin: 4px 0;
     background-color: transparent;
     border: none;
     outline: none;
@@ -442,11 +446,16 @@ li {
   color: #032C4B;
   font-size: 18px;
   color: #032C4B;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px; }
 
 .main-slider__items {
-  position: relative;
-  bottom: -90px;
+  position: absolute;
+  max-width: 1024px;
+  bottom: -97px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,8 +464,9 @@ li {
           justify-content: space-between; }
 
 .main-slider-item {
-  -ms-flex-preferred-size: 225px;
-      flex-basis: 225px;
+  position: relative;
+  -ms-flex-preferred-size: 222px;
+      flex-basis: 222px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,13 +476,24 @@ li {
   padding: 27px 16px;
   background-color: rgba(251, 251, 251, 0.8);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1)); }
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .main-slider-item__icon {
-    margin-right: 15px; }
+    margin-right: 15px;
+    display: block;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .main-slider-item__title {
     font-size: 20px;
     text-transform: uppercase;
     color: #032C4B; }
+  .main-slider-item:hover {
+    bottom: 10px; }
+
+.slick-track {
+  height: 481px; }
 
 .switch-blocks {
   display: -webkit-box;
@@ -664,9 +685,7 @@ li {
     position: absolute; }
 
 .faculties {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -691,6 +710,23 @@ li {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
+.faculties {
+  display: grid;
+  grid-template-areas: "title images" "textValue images" "button images"; }
+
+.faculties-title {
+  grid-area: title; }
+
+.faculties__items {
+  grid-area: images; }
+
+.faculties__text-info {
+  grid-area: textValue;
+  margin-top: 50px; }
+
+.faculties-btn-wrap {
+  grid-area: button; }
+
 .faculties-title {
   position: relative;
   top: 23px;
@@ -704,6 +740,11 @@ li {
 .faculties-item {
   position: relative;
   margin-left: 28px; }
+  .faculties-item__img {
+    display: block;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .faculties-item__text {
     position: absolute;
     -webkit-backdrop-filter: blur(10px);
@@ -824,7 +865,10 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin: -10px; }
 
 .footer-block:first-child {
   margin-bottom: 104px; }
@@ -842,10 +886,11 @@ li {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 .info-block {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 218px;
+      flex-basis: 218px;
   color: #EDEDED;
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 20px; }
   .info-block__title {
     text-transform: uppercase;
     font-style: normal;
@@ -878,6 +923,8 @@ li {
           transform: translate(-50%, -50%); }
 
 .contact-block {
+  -ms-flex-preferred-size: 257px;
+      flex-basis: 257px;
   padding: 30px;
   border: 2px solid #EDEDED; }
 

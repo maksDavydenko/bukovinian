@@ -8,7 +8,7 @@ $( document ).ready(function() {
       arrows: false,
   });
 
-  const linksArr = ["http://www.google.com/", "https://www.youtube.com/", "https://www.instagram.com/", "https://www.instagram.com/", "https://twitter.com/?lang=ru" ]
+  const linksArr = ["http://www.google.com/", "https://www.youtube.com/", "https://www.instagram.com/", "https://www.linkedin.com/", "https://twitter.com/?lang=ru" ]
 
   $( ".slick-dots" ).wrap('<div class="main-slider__nav"></div>')
   $( ".main-slider__nav" ).prepend( '<div class="controls-btn upBtn"><img src="./img/icons/arrowUpBlue.svg" alt="up"></div>' );
