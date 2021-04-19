@@ -447,7 +447,7 @@ li {
   font-size: 18px;
   color: #032C4B;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px; }
+  border-radius: 3px; }
 
 .main-slider__items {
   position: absolute;
@@ -732,10 +732,14 @@ li {
   top: 23px;
   margin-bottom: 49px; }
 
-.faculties-btn {
+.faculties-btn,
+.news-btn {
   padding: 4px 24px;
   border-radius: 5px;
   font-size: 16px; }
+
+.news-btn--addition-margin {
+  margin-right: 22px; }
 
 .faculties-item {
   position: relative;
@@ -853,6 +857,22 @@ li {
   background: linear-gradient(90deg, #EF0000 0%, #C20C00 100%);
   -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25); }
+
+.news-section {
+  display: grid;
+  grid-template-areas: "textNews news-img switch" "news-btn news-img switch"; }
+
+.news-text-block {
+  grid-area: textNews; }
+
+.news-btn-wrap {
+  grid-area: news-btn; }
+
+.news-block-img {
+  grid-area: news-img; }
+
+.switch-blocks {
+  grid-area: switch; }
 
 .footer {
   padding: 47px 0px 45px;

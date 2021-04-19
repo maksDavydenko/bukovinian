@@ -447,7 +447,7 @@ color: #032C4B;
   font-size: 18px;
   color: #032C4B;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .main-slider__items {
@@ -719,17 +719,27 @@ margin-top: 50px;
   grid-area:button;
 }
 
+.news-btn-wrap {
+ 
+}
+
 .faculties-title {
   position: relative;
   top: 23px;
   margin-bottom: 49px;
 }
 
-.faculties-btn {
+.faculties-btn,
+.news-btn {
   padding: 4px 24px;
   border-radius: 5px;
   font-size: 16px;
 }
+
+.news-btn--addition-margin {
+  margin-right: 22px;
+}
+
 .faculties-item {
   position: relative;
   margin-left: 28px;
@@ -854,6 +864,27 @@ margin-bottom: 70px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
+.news-section {
+  display: grid;
+  grid-template-areas: "textNews news-img switch"
+                        "news-btn news-img switch";
+}
+
+.news-text-block {
+  grid-area: textNews;
+}
+
+.news-btn-wrap {
+  grid-area: news-btn;
+}
+
+.news-block-img {
+  grid-area: news-img;
+}
+
+.switch-blocks {
+  grid-area: switch;
+}
 
 .footer {
   padding: 47px 0px 45px;
