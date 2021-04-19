@@ -20,6 +20,7 @@
 }
 
 @media screen and (max-width: 1230px) {
+   
    .faculties {
         display: grid;
         grid-template-areas: "title title"
@@ -49,6 +50,29 @@
     .faculties-btn-wrap {
        margin: 30px auto 0;
     }
+
+
+    .news-section {
+        grid-template-areas: "titleNews titleNews titleNews"
+                              "switch switch switch"
+                              "textNews news-img news-img";
+        margin-bottom: 75px;
+      }
+
+      .switch-blocks {
+        width: 75%;
+        margin: 50px auto 30px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .news-block-img {
+        margin-left: auto;
+      }
+
+      .switch-block {
+          max-width: 25%;
+      }
 }
 
 
@@ -103,7 +127,7 @@
 .main-slider-item {
     flex-direction: column;
     padding: 20px;
-    flex-basis: 18%;
+    flex-basis: 22%;
 
 &__icon {
     margin-right: 0;
@@ -152,6 +176,10 @@
     }
 }
 @media screen and (max-width: 900px) {
+
+    .main-slider {
+        margin-bottom: 75px;
+    }
     .figures-blocks {
         grid-template-areas: 'first'
     }
@@ -186,6 +214,10 @@
         margin-right: 0;
     }
 
+    .main-slider__nav  {
+        top: 20px;
+    }
+
     .menu-nav {
         padding: 10px 0;
         &__list {
@@ -216,7 +248,7 @@
         }
 
         &__items {
-            bottom: -75px;
+            bottom: -60px;
         }
         &__title{
         font-size: 28px;
@@ -236,22 +268,26 @@
 
 }
 
-   
+   .main-slider-item {
+    padding: 7px;
+    &__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    &__title {
+        font-size: 10px;
+        line-height: 12px
+    }
 }
 
-// .main-slider-item {
-//     flex-basis: 73px;
-//     padding: 7px;
-//     &__icon {
-//         width: 30px;
-//         height: 30px;
-//     }
+.switch-blocks {
+    width: 100%;
+    margin: 50px auto 30px;
+}
+}
 
-//     &__title {
-//         font-size: 10px;
-//         line-height: 12px
-//     }
-// }
+
 
 // .main-slider-item {
 //     flex-direction: column;

@@ -31,7 +31,28 @@
     margin: 0px 15px; }
 
   .faculties-btn-wrap {
-    margin: 30px auto 0; } }
+    margin: 30px auto 0; }
+
+  .news-section {
+    grid-template-areas: "titleNews titleNews titleNews" "switch switch switch" "textNews news-img news-img";
+    margin-bottom: 75px; }
+
+  .switch-blocks {
+    width: 75%;
+    margin: 50px auto 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+  .news-block-img {
+    margin-left: auto; }
+
+  .switch-block {
+    max-width: 25%; } }
 @media screen and (max-width: 1170px) {
   .menu-nav {
     padding: 18px 0; }
@@ -74,8 +95,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 20px;
-    -ms-flex-preferred-size: 18%;
-        flex-basis: 18%; }
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%; }
     .main-slider-item__icon {
       margin-right: 0;
       margin-bottom: 5px; }
@@ -116,6 +137,9 @@
     display: -ms-flexbox;
     display: flex; } }
 @media screen and (max-width: 900px) {
+  .main-slider {
+    margin-bottom: 75px; }
+
   .figures-blocks {
     grid-template-areas: "first"; }
 
@@ -142,6 +166,9 @@
   .header-panel__item:last-child {
     margin-right: 0; }
 
+  .main-slider__nav {
+    top: 20px; }
+
   .menu-nav {
     padding: 10px 0; }
     .menu-nav__list {
@@ -167,7 +194,7 @@
     top: 100px;
     max-width: 300px; }
   .main-slider__items {
-    bottom: -75px; }
+    bottom: -60px; }
   .main-slider__title {
     font-size: 28px;
     line-height: 33px;
@@ -176,6 +203,19 @@
       line-height: 33px; }
   .main-slider .slider-more-btn {
     padding: 6px 15px;
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .main-slider-item {
+    padding: 7px; }
+    .main-slider-item__icon {
+      width: 30px;
+      height: 30px; }
+    .main-slider-item__title {
+      font-size: 10px;
+      line-height: 12px; }
+
+  .switch-blocks {
+    width: 100%;
+    margin: 50px auto 30px; } }
 
 /*# sourceMappingURL=media.css.map */
