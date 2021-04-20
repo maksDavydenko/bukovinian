@@ -24,7 +24,7 @@ li {
 .container {
   width: 80%;
   max-width: 1157px;
-  min-width: 320px;
+  min-width: 280px;
   margin: 0 auto;
 }
 
@@ -64,7 +64,6 @@ li {
 }
 
 .header-panel {
-  padding: 5px;
   background-color: #CFCFCF;
 }
 
@@ -112,8 +111,8 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 175px;
-  max-height: 175px;
+  width: 175px;
+  height: 175px;
   padding: 20px 12px 15px;
   background-color: #032C4B;
   z-index: 3;
@@ -293,7 +292,7 @@ color: #032C4B;
   }
 }
 .btn {
-  width: 136px;
+  min-width: 136px;
   padding: 4px;
   text-transform: uppercase;
   border: 2px solid #032C4B;
@@ -427,18 +426,15 @@ color: #032C4B;
  align-items: center;
 }
 
-// .downBtn {
-//   bottom: 38%;
-// }
-
-// .upBtn {
-//   top: 25%;
-// }
 .slick-active {
   button {
   background: #032C4B;
   color: #fff;
   }
+}
+
+.slick-track {
+  height: 600px;
 }
 
 .slider-more-btn {
@@ -487,10 +483,6 @@ color: #032C4B;
 }
 }
 
-.slick-track {
-  height: 481px;
-}
-
 .switch-blocks{
   display: flex;
   margin-left: auto;
@@ -501,7 +493,6 @@ color: #032C4B;
 .switch-block {
   max-width: 115px;
   padding: 9px;
-  margin-bottom: 20px;
   color: #525252;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -526,6 +517,10 @@ color: #032C4B;
     font-style: italic;
     font-size: 10px;
   }
+}
+
+.switch-block:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .gallery {
@@ -565,12 +560,16 @@ color: #032C4B;
   align-items: flex-start;
 }
 
+.galery-btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 
 .gallery-btn {
- display: flex;
- justify-content: center;
- margin: auto;
- color: #032C4B;
+  padding: 9px 31px;
+  margin: auto;
+  color: #032C4B;
 }
 
 .modal {
@@ -656,15 +655,21 @@ color: #032C4B;
 color: #032C4B;
 
 &::after {
+  content: "";
+  width: 41px;
+  height: 33px;
   bottom: -20px;
   right: -30px;
-  content: url("../img/icons/Subtract\ bottom.svg");
+  background-image: url("../img/icons/Subtract\ bottom.svg");
   position: absolute;
 }
 &::before {
   top: -20px;
   left: -30px;
-  content: url("../img/icons/Subtract\ top.svg");
+  width: 72px;
+  height: 61px;
+  content: "";
+  background-image:url("../img/icons/Subtract\ top.svg");
   position: absolute;
 }
 }
@@ -713,6 +718,8 @@ color: #032C4B;
 }
 .faculties__items {
   grid-area: images;
+  display: flex;
+  justify-content: space-between;
 }
 .faculties__text-info {
 grid-area: textValue;
@@ -756,6 +763,8 @@ margin-top: 50px;
     position: absolute;
     backdrop-filter: blur(10px);
     bottom: 0;
+    right: 0;
+    left: 0;
     padding: 25px 14px;
     font-style: normal;
     font-weight: bold;
