@@ -24,8 +24,7 @@
     max-width: 100%; }
 
   .faculties__items {
-    width: 100%;
-    margin: 0 -15px; }
+    width: 100%; }
 
   .faculties__text-info {
     margin-top: 40px; }
@@ -35,6 +34,9 @@
 
   .faculties-btn-wrap {
     margin: 35px auto 0; }
+
+  .title-shadow {
+    left: 0; }
 
   .news-section {
     grid-template-areas: "titleNews titleNews titleNews" "switch switch switch" "textNews news-img news-img";
@@ -206,10 +208,10 @@
     height: 326px; }
 
   .main-slider__block {
-    top: 100px;
+    top: 90px;
     max-width: 300px; }
   .main-slider__items {
-    bottom: -60px; }
+    bottom: -70px; }
   .main-slider__title {
     font-size: 28px;
     line-height: 33px;
@@ -217,7 +219,7 @@
     .main-slider__title span {
       line-height: 33px; }
   .main-slider .slider-more-btn {
-    padding: 6px 15px;
+    padding: 3px 15px;
     font-size: 12px; }
 
   .main-slider-item {
@@ -283,6 +285,10 @@
   .main-slider {
     margin-bottom: 50px; }
 
+  .main-slider-item__icon {
+    width: 23px;
+    height: 23px; }
+
   .header-nav__list {
     padding: 6px 0; }
 
@@ -308,6 +314,9 @@
         -ms-flex-order: -1;
             order: -1;
     margin-right: 15px; }
+
+  .switch-block__title {
+    margin-bottom: 0; }
 
   .faculties-item__text {
     padding: 9px 0;
@@ -341,15 +350,24 @@
 
   .contact-block {
     -ms-flex-preferred-size: 100%;
-        flex-basis: 100%; }
+        flex-basis: 100%;
+    padding: 16px 19px; }
     .contact-block .info-block__title {
       text-align: center; }
+
+  .footer {
+    padding: 20px 0; }
 
   .footer-block:first-child {
     margin-bottom: 10px; }
     .footer-block:first-child::before {
       display: none; } }
 @media screen and (max-width: 450px) {
+  .main-slider-item {
+    padding: 7px 0;
+    -ms-flex-preferred-size: 73px;
+        flex-basis: 73px; }
+
   .contact-item__icon {
     width: 14px;
     height: 14px; }
@@ -401,12 +419,15 @@
       font-size: 10px;
       line-height: 12px; }
 
-  .info-block__title {
-    font-size: 12px;
-    line-height: 12px;
-    margin-bottom: 10px; }
-  .info-block__link {
-    font-size: 10px; }
+  .info-block {
+    margin: 10px; }
+    .info-block__title {
+      font-size: 12px;
+      line-height: 12px;
+      margin-bottom: 10px; }
+    .info-block__link {
+      font-size: 10px;
+      line-height: 10px; }
 
   .faculties {
     margin-bottom: 30px; }
@@ -422,6 +443,9 @@
 
   .switch-block {
     padding: 9px; }
+    .switch-block__title {
+      font-size: 10px;
+      line-height: 10px; }
 
   .news-section {
     margin-bottom: 35px; }
@@ -439,6 +463,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: auto; } }
+    margin: auto; }
+
+  .contact-block .info-block__title {
+    font-size: 15px; } }
 
 /*# sourceMappingURL=media.css.map */

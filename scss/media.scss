@@ -40,7 +40,6 @@
 
     .faculties__items {
         width: 100%;
-        margin: 0 -15px;
     }
     .faculties__text-info {
         margin-top: 40px;
@@ -53,6 +52,9 @@
        margin: 35px auto 0;
     }
 
+    .title-shadow {
+        left: 0;
+    }
 
     .news-section {
         grid-template-areas: "titleNews titleNews titleNews"
@@ -258,12 +260,12 @@
 
     .main-slider {
         &__block {
-            top: 100px;
-           max-width: 300px;
+            top: 90px;
+            max-width: 300px;
         }
 
         &__items {
-            bottom: -60px;
+            bottom: -70px;
         }
         &__title{
         font-size: 28px;
@@ -277,7 +279,7 @@
     }
 
     .slider-more-btn {
-        padding: 6px 15px;
+        padding: 3px 15px;
         font-size: 12px;
     }
 
@@ -363,6 +365,13 @@
     .main-slider {
         margin-bottom: 50px;
     }
+
+    .main-slider-item {
+        &__icon {
+            width: 23px;
+            height: 23px;
+        }
+    }
     .header-nav__list {
         padding: 6px 0;
     }
@@ -389,7 +398,11 @@
         margin-right: 15px;
     }
     
-  
+  .switch-block {
+      &__title {
+          margin-bottom: 0;
+      }
+  }
     .faculties-item__text {
         padding: 9px 0;
         font-size: 10px;
@@ -430,10 +443,16 @@
     }
     .contact-block {
         flex-basis: 100%;
+        padding: 16px 19px;
+      
 
         .info-block__title {
             text-align: center;
         }
+    }
+
+    .footer {
+        padding: 20px 0;
     }
 
     .footer-block:first-child {
@@ -445,6 +464,11 @@
 } 
 
 @media screen and (max-width: 450px) {
+
+    .main-slider-item {
+        padding: 7px 0;
+        flex-basis: 73px;
+    }
 
     .contact-item {
         &__icon {
@@ -507,6 +531,7 @@
     }
 
     .info-block {
+        margin: 10px;
         &__title {
             font-size: 12px;
             line-height: 12px;
@@ -514,6 +539,7 @@
         }
         &__link {
             font-size: 10px;
+            line-height: 10px;
         }
     }
     .faculties {
@@ -536,6 +562,11 @@
 
     .switch-block {
         padding: 9px;
+
+        &__title {
+            font-size: 10px;
+            line-height: 10px;
+        }
     }
 
     .news-section {
@@ -548,6 +579,12 @@
         flex-direction: column;
         align-items: center;
         margin: auto;
+    }
+
+    .contact-block {
+        .info-block__title {
+            font-size: 15px;
+        }
     }
 }
  

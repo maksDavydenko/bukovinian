@@ -5,17 +5,13 @@ var gallery = document.getElementById("lightgallery");
 var modalImg = document.getElementById("img01");
 
 gallery.addEventListener('click', (e) => {
-    const img = e.target.closest('.gallery-item');
+    const imgPath = e.target.closest('li');
     modal.style.display = "block";
-    modalImg.src = img.src;
+    modalImg.src = imgPath.getAttribute('data-src');
 });
 
+const span = document.getElementsByClassName("close")[0];
 
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }

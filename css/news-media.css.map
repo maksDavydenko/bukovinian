@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qCAAqC;EACjC,aAAc;IACV,KAAK,EAAE,GAAG",
+"sources": ["../scss/news-media.scss"],
+"names": [],
+"file": "news-media.css"
+}
