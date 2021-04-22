@@ -73,9 +73,13 @@
                         <input type="text" class="search-block__input" placeholder="Search">
                         <button class="search-block__button"><img src="./img/icons/search.svg" alt="search"></button>
                     </div>
-                    <div class="change-language">
-                        <span>Eng</span>    
+                    <div class="change-language" id="change-language">
+                        <span class="lang-text">Eng</span>    
                             <img src="./img/icons/downArrow.svg" width="7" height="4" alt="">
+                            <ul class="change-language-list" id="language-menu">
+                                <li class="language-active">Eng</li>
+                                <li>Ua</li>
+                            </ul>
                     </div>
                 </div>
             </div>
@@ -84,10 +88,47 @@
             <div class="container">
             <ul class="menu-nav__list">
                 <li class="menu-nav__item">
-                    <a href="./news.html" class="menu-nav__link"> GENERAL INFORMATION </a>
+                    <a href="./news.html" class="menu-nav__link"></a> GENERAL INFORMATION </a>
                 </li>
                 <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link"> ADMISSION</a>
+                   ADMISSION
+                    <ul class="drop-down-l-2">
+                        <li>GENERAL INFORMATION
+                            <ul class="drop-down-l-3">
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                            </ul>
+                        </li>
+                        <li>GENERAL INFORMATION
+                            <ul class="drop-down-l-3">
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                            </ul>
+                        </li>
+                        <li>GENERAL INFORMATION
+                            <ul class="drop-down-l-3">
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                            </ul>
+                        </li>
+                        <li>GENERAL INFORMATION
+                            <ul>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                            </ul>
+                        </li>
+                        <li>GENERAL INFORMATION
+                            <ul>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                                <li> <a href="" class="menu-nav__link">GENERAL INFORMATION</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
                 <li class="menu-nav__item">
                     <a href="" class="menu-nav__link">EDUCATION </a>
@@ -490,6 +531,6 @@
 <script src="./js/scrollTop.js"></script>
 <script src="./js/imgModal.js"></script>
 <script src="./js/menu.js"></script> 
-
+<script src="./js/change-language.js"></script> 
 </body>
 </html>
