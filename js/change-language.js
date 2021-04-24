@@ -3,10 +3,11 @@ const langMenu = document.getElementById('language-menu');
 
 lang.addEventListener('click', () => {
     langMenu.style.display = 'block';
+    return;
 });
 
 langMenu.addEventListener('click', e => {
-    const  list =Array.from(langMenu.children);
+    const  list = Array.from(langMenu.children);
 
     list.forEach(item => {
         item.classList.contains('language-active') ?  item.classList.remove('language-active') : null;
@@ -19,6 +20,7 @@ langMenu.addEventListener('click', e => {
     Array.from(lang.children).forEach(langText => {
         if(langText.classList.contains('lang-text')) {
             langText.textContent = langitem.textContent;
+            closeMenu()
             return;
         }
     })
@@ -30,3 +32,8 @@ document.addEventListener('click', e => {
         langMenu.style.display = 'none';
     }
 })
+
+
+const closeMenu = ()  => {
+    langMenu.style.display='none';
+}

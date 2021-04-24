@@ -81,9 +81,21 @@
       .switch-block:last-child {
         margin-bottom: 20px;
       }
+
+      .form-item {
+          margin: 0;
+      }
 }
 
 @media screen and (max-width: 1170px) {
+
+    .logo {
+     img {
+         width: 140px;
+         height: 140px;
+     }   
+     
+    }
     .menu-nav {
         padding: 18px 0;
         &__item {
@@ -181,8 +193,7 @@
         }
     }
     .form-block {
-        position: static;
-        display: none;
+       
     }
 }
 @media screen and (min-width: 901px) {
@@ -191,21 +202,7 @@
     }
 }
 @media screen and (max-width: 900px) {
-    .logo {
-        width: 112px;
-        height: 112px;
-        padding: 10px 7px;
-
-        img {
-            width: 71px;
-            height: 62px;
-            margin-bottom: 10px;
-        }
-
-        h3{
-            font-size: 10px;
-        }
-    }
+    
     
     .main-slider {
         margin-bottom: 75px;
@@ -357,6 +354,14 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    .logo {
+        img {
+            width: 120px;
+            height: 120px;
+        }   
+        
+       }
     .container {
         padding: 0 15px;
         width: 100%;

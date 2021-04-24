@@ -107,14 +107,6 @@ li {
   position: absolute;
   left: 0;
   top: -5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 175px;
-  height: 175px;
-  padding: 20px 12px 15px;
-  background-color: #032C4B;
   z-index: 3;
 
 h3{
@@ -227,7 +219,7 @@ color: #032C4B;
   display: flex;
   justify-content: flex-end;
   background: #032C4B;
-  padding: 22px 0;
+  
 
   &__list {
     display: flex;
@@ -237,6 +229,7 @@ color: #032C4B;
   &__item {
     margin-right: 35px;
     position: relative;
+    padding: 22px 0;
   }
 
   &__link {
@@ -264,27 +257,27 @@ color: #032C4B;
   }
 }
 
-// ul li ul  {
-//   display: none;
-//   visibility: hidden;
-//   opacity: 0;
-//   position: absolute;
-//   transition: all 0.5s ease;
-//   margin-top: 1rem;
-//   left: 0;
-// }
+ul li ul  {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+}
 
-// ul > li:hover > ul,
-// ul li ul:hover {
-//   display: block;
-//   visibility: visible;
-//   opacity: 1;
-//   display: block;
-// }
+ul > li:hover > ul,
+ul li ul:hover {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
 
 .drop-down-l-2 {
   position: absolute;
-  top: 45px;
+  top: 48px;
   width: 290px;
   li {
     position: relative;
@@ -294,7 +287,7 @@ color: #032C4B;
     line-height: 15px;
     border-bottom: 1px solid#BFBFBF;
     cursor: pointer;
-    color:#032C4B;
+    
 
     &::after {
         content: url('../img/icons/arrow-right-blue-small.svg');
@@ -304,20 +297,37 @@ color: #032C4B;
         transform: translate(-50%, -50%);
     }
   }
+
+  a {
+    color:#032C4B;
+  }
 }
 
 .drop-down-l-3 {
   position: absolute;
-  right: -100%;
+  top: 0;
+  left: 100%;
+  width: 203px;
+  top: -16px;
+  padding-left: 2px;
+
+  &--left {
+      left: -203px;
+  }
   li {
     padding: 7px 12px;
     background: #EDEDED;
-    font-size: 13px;
+   
     line-height: 15px;
     border-bottom: 1px solid#BFBFBF;
     cursor: pointer;
+
+    &::after {
+      content: "";
+    }
     a {
       color:#032C4B;
+      font-size: 13px;
     }
   }
 }
@@ -364,7 +374,7 @@ color: #032C4B;
 
 #scrollTop {
   position: fixed;
-  bottom: 18px;
+  bottom: 65px;
   right: 18px;
   width: 43px;
   height: 43px;
@@ -378,6 +388,7 @@ color: #032C4B;
     content: url('../img/icons/smallArrowUpLight.svg');
   }
 }
+
 .btn {
   min-width: 136px;
   padding: 4px;
@@ -429,9 +440,6 @@ color: #032C4B;
   width: 96px;
 }
 
-
-
-
 //content
 
 .main-slider {
@@ -445,13 +453,12 @@ color: #032C4B;
     margin: auto;
   }
 
-&__block {
-  position: absolute;
-  top: 87px;
-  max-width: 538px;
-  z-index: 2;
-}
-
+  &__block {
+    position: absolute;
+    top: 87px;
+    max-width: 538px;
+    z-index: 2;
+  }
 
   &__title {
     font-size: 55px;
@@ -507,10 +514,10 @@ color: #032C4B;
 .controls-btn {
   width: 40px;
   height: 40px;
- cursor: pointer;
- display: flex;
- justify-content: center;
- align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slick-active {
@@ -553,21 +560,22 @@ color: #032C4B;
   background-color: rgba(251, 251, 251, 0.8);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
   transition: 0.3s;
+
   &__icon {
     margin-right: 15px;
     display: block;
     max-width: 100%;
     object-fit: cover;
   }
-&__title {
-  font-size: 20px;
-  text-transform: uppercase;
 
-color: #032C4B;
-}
-&:hover {
-  bottom: 10px;
-}
+  &__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #032C4B;
+  }
+  &:hover {
+    bottom: 10px;
+  }
 }
 
 .switch-blocks{
@@ -653,7 +661,6 @@ color: #032C4B;
   justify-content: center;
 }
 
-
 .gallery-btn {
   padding: 9px 31px;
   margin: auto;
@@ -661,19 +668,19 @@ color: #032C4B;
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 999; /* Sit on top */
-  padding-top: 5vh; /* Location of the box */
+  display: none;
+  position: fixed; 
+  z-index: 999; 
+  padding-top: 5vh;  
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: hidden; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
 }
 
 /* Modal Content (Image) */
@@ -968,6 +975,7 @@ margin-bottom: 70px;
   grid-template-areas: "titleNews news-img switch"
                         "textNews news-img switch"
                         "textNews news-img switch";
+  margin-bottom: 80px;
 }
 
 .news-block-title{
