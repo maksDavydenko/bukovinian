@@ -15,9 +15,12 @@
 
 @media screen and (max-width: 1280px) {
     .menu-nav {
-        padding: 18px 0;
         &__link {
           font-size: 16px;
+        }
+
+        &__item {
+            padding: 18px 0; 
         }
     }
 }
@@ -97,8 +100,8 @@
      
     }
     .menu-nav {
-        padding: 18px 0;
         &__item {
+            padding: 18px 0;
             margin-right: 20px;
         }
         &__link {
@@ -192,8 +195,17 @@
             }
         }
     }
-    .form-block {
-       
+    .form-item {
+        &__title {
+            font-size: 16px;
+        }
+
+        &__input {
+            flex-basis: 20%;
+        }
+        .btn--send {
+            min-width: 106px;
+        }
     }
 }
 @media screen and (min-width: 901px) {
@@ -203,16 +215,29 @@
 }
 @media screen and (max-width: 900px) {
     
-    
+    .drop-down-l-2 {
+        position: static;
+        margin-left: -20px;
+        width: 100%;
+        li {
+            background-color: #032C4B;
+            padding-left: 20px;
+            a {
+              color: #fff;
+            }
+        }
+    }
+
+    .drop-down-l-3 {
+        position: static;
+    }
+   
     .main-slider {
         margin-bottom: 75px;
     }
     .figures-blocks {
         grid-template-areas: 'first'
     }
-
-    
-
 
     .search-block,
     .header-links,
@@ -312,6 +337,24 @@
     margin: 50px auto 30px;
 }
 }
+@media screen and (max-width: 940px) {
+    .form-item {
+        &__title {
+        order: 2;
+        margin-bottom: 5px;
+        }
+
+        &__input {
+            flex-basis: 20%;
+            margin-right: 10px;
+        
+        }
+        .btn--send {
+            min-width: 106px;
+        }
+    }
+}
+
 @media screen and (max-width: 770px) {
 
     .faculties-item__text {
@@ -350,6 +393,20 @@
         padding: 10px 25px;
         flex-basis: 77px;
         text-align: center;
+    }
+
+    .form-item {
+        &__title {
+        font-size: 12px;
+        }
+
+        &__input {
+           max-width: 25%;
+        }
+
+        .btn--send {
+            width: 15%;
+        }
     }
 }
 
@@ -464,6 +521,26 @@
         margin-bottom: 10px;
         &::before {
             display: none;
+        }
+    }
+    .form-block {
+        padding: 5px 0;
+    }
+    .form-item {
+     
+        &__title {
+        font-size: 10px;
+        }
+
+        &__input {
+            padding: 5px;
+           max-width: 25%;
+           font-size: 12px;
+        }
+
+        .btn--send {
+           min-width: 15%;
+           font-size: 12px;
         }
     }
 } 
@@ -589,6 +666,25 @@
     .contact-block {
         .info-block__title {
             font-size: 15px;
+        }
+    }
+
+    .form-item {
+        &__title {
+        font-size: 7px;
+        margin-bottom: 5px;
+        }
+
+        &__input {
+            margin: 0;
+            padding: 2px 5px;
+           font-size: 10px;
+        }
+
+        .btn--send {
+           min-width: 66px;
+           font-size: 10px;
+           padding: 1px 0;
         }
     }
 }

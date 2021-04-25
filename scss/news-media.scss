@@ -3,3 +3,28 @@
         width: 72%;
     }
 }
+
+@media screen and (max-width: 1170px) {
+    .info-section-description {
+        display: none;
+    }
+
+    .info-section {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        display: grid;
+        grid-template-areas: "navigation"
+                            "content"
+                            "news";
+    }
+
+    .navigation { 
+        width: 100%;
+    }
+}
+
+
