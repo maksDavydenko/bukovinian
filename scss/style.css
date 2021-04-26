@@ -263,6 +263,10 @@ li {
     .menu-nav__link:hover:after {
       display: block; }
 
+#menu {
+  width: 15px;
+  height: 15px; }
+
 ul li ul {
   display: none;
   visibility: hidden;
