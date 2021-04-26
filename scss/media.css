@@ -166,7 +166,9 @@
   .drop-down-l-2 {
     position: static;
     margin-left: -20px;
-    width: 100%; }
+    margin-top: 10px;
+    width: 100%;
+    border-top: 1px solid #fff; }
     .drop-down-l-2 li {
       background-color: #032C4B;
       padding-left: 20px; }
@@ -495,6 +497,8 @@
       font-size: 12px;
       line-height: 12px;
       margin-bottom: 10px; }
+    .info-block__item {
+      margin-bottom: 0; }
     .info-block__link {
       font-size: 10px;
       line-height: 10px; }

@@ -263,7 +263,6 @@ ul li ul  {
   opacity: 0;
   position: absolute;
   transition: all 0.5s ease;
-  margin-top: 1rem;
   left: 0;
 }
 
@@ -302,12 +301,13 @@ ul li ul:hover {
 }
 
 .mobile-drop-down-arrow {
-  display: none;
+  z-index: 2;
   position: absolute;
   right: 0;
   padding: 10px 15px;
-  top: 0;
+  top: -4px;
 }
+
 .drop-down-l-3 {
   position: absolute;
   top: 0;
@@ -1087,6 +1087,9 @@ margin-bottom: 70px;
     margin-bottom: 30px;
   }
 
+  &__item {
+    margin-bottom: 10px;
+  }
   &__link {
     align-items: center;
     color: #EDEDED;
@@ -1427,8 +1430,15 @@ details > summary::marker {
   &__img {
     position: relative;
     height: 162px;
+   
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
     backdrop-filter: blur(15px);
+
+    img {
+      max-width: 100%;
+      display: block;
+      object-fit: cover;
+    }
   }
 
   &__label {

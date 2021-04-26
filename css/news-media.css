@@ -13,6 +13,9 @@
     font-size: 28px;
     line-height: 28px; }
 
+  .news {
+    max-width: 100%; }
+
   .news-items {
     display: -webkit-box;
     display: -ms-flexbox;

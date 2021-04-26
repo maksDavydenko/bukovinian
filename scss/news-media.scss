@@ -16,9 +16,14 @@
                             "content"
                             "news";
     }
+
     .info-section-title {
         font-size: 28px;
         line-height: 28px;
+    }
+
+    .news {
+        max-width: 100%;
     }
 
     .news-items {
@@ -26,6 +31,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
 }
 
 
