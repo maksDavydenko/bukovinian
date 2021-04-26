@@ -302,6 +302,7 @@ ul li ul:hover {
     color: #032C4B; }
 
 .mobile-drop-down-arrow {
+  display: none;
   position: absolute;
   right: 0;
   padding: 10px 15px;
