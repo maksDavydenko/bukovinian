@@ -281,7 +281,7 @@ ul li ul:hover {
 
 .drop-down-l-2 {
   position: absolute;
-  top: 48px;
+  top: 64px;
   width: 290px;
   li {
     position: relative;
@@ -311,6 +311,7 @@ ul li ul:hover {
   right: 0;
   padding: 10px 15px;
   top: -4px;
+  display: none;
 }
 
 .drop-down-l-3 {
@@ -318,7 +319,7 @@ ul li ul:hover {
   top: 0;
   left: 100%;
   width: 203px;
-  top: -16px;
+  top:  0;
   padding-left: 2px;
 
   &--left {
