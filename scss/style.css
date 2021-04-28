@@ -255,7 +255,7 @@ li {
               transform: translate(0 -50%);
       left: 0;
       bottom: -22px;
-      height: 2px;
+      height: 3px;
       width: 100%;
       background: #FFEBC3;
       -webkit-transition: 0.3s;
@@ -354,7 +354,8 @@ ul li ul:hover {
 
 .search-mobile {
   margin: 0 20px;
-  position: relative; }
+  position: relative;
+  z-index: 9; }
   .search-mobile::after {
     content: "";
     left: 20px;
@@ -384,6 +385,8 @@ ul li ul:hover {
     background: #FFFFFF;
     border: 0.9px solid #032C4B;
     border-radius: 2px; }
+    .search-mobile__input:focus {
+      outline: none; }
 
 #scrollTop {
   position: fixed;
@@ -912,6 +915,22 @@ ul li ul:hover {
   text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
+  .figures-item__icon {
+    margin: 0 auto; }
+    .figures-item__icon--active {
+      display: none; }
+  .figures-item .img-wrap {
+    width: 93px;
+    height: 93px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .figures-item .img-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
   .figures-item::after {
     content: url("../img/icons/triengle.svg");
     position: absolute;
@@ -948,6 +967,12 @@ ul li ul:hover {
 
 .figures-item:hover {
   border: 4px solid #032C4B; }
+
+.figures-item:hover .figures-item__icon {
+  display: none; }
+
+.figures-item:hover .figures-item__icon--active {
+  display: block; }
 
 .figures-item:hover::after {
   -webkit-transition: 0.3s;
@@ -1290,7 +1315,14 @@ ul li ul:hover {
           backdrop-filter: blur(15px); }
   .navigation-block details {
     padding: 9px 21px;
-    border-bottom: 1px solid #C4C4C4; }
+    border-bottom: 1px solid #C4C4C4;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+    .navigation-block details:focus {
+      outline: 0;
+      outline-offset: 0; }
   .navigation-block summary {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1307,6 +1339,9 @@ ul li ul:hover {
     line-height: 109.6%;
     letter-spacing: -0.02em;
     text-transform: uppercase; }
+    .navigation-block summary:focus {
+      outline: 0;
+      outline-offset: 0; }
   .navigation-block summary img {
     display: none;
     width: 7px;

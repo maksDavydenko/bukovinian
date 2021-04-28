@@ -7,27 +7,23 @@ const dropDownArrow = document.querySelectorAll('.js-mobile-drop-down');
 menuBtn.addEventListener('click', () => {
     menuWrap.style.display === 'flex' ?  
     menuWrap.style.display = 'none' :  
-    menuWrap.style.display = 'flex'
+    menuWrap.style.display = 'flex';
 });
 
 searchMobile.addEventListener('click', e => {
     !e.target.closest('Input') ?
      searchMobileInput.classList.toggle('display-block'): 
      null;
-     
-     searchMobileInput.focus()
-     
+     searchMobileInput.focus();
 })
-
 
 dropDownArrow.forEach(element => {
     element.addEventListener('click', e => {
-      const li =  e.target.closest('li');
+    const li =  e.target.closest('li');
     const  list = Array.from(li.children);
 
     list.forEach(item => {
         if(item.classList.contains('drop-down')) {
-
             console.log(item);
             item.style.display === "block" ?  item.style.display = 'none':   item.style.display = 'block'
             return;

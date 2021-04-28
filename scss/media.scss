@@ -297,6 +297,12 @@
             border-top: 1px solid#EDEDED;
             margin-right: 0;
         }
+
+        &__link{
+            &::after{
+                background: transparent;
+            }
+        }
     }
    
     .slick-track {
@@ -473,11 +479,13 @@
     .header-nav__item {
         margin-right: 0;
         &::after{
-          right: calc(100% + 16px);
+          width: 0;
+          height: 0;
         }
       }
 
-          
+        
+                
     .contact-item--phone  {
         border-bottom: 1px solid  #032C4B;
     }
@@ -494,7 +502,18 @@
         }
     }
     .contact-items-wrap {
+        position: relative;
         flex-direction: column;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.5px;
+            height: 40px;
+            left: 2px;
+            top: 50%;
+            transform: translate(-50% , -50%);
+            background: #032C4B;
+        }
     }
 
     .change-language {

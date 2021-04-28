@@ -246,7 +246,7 @@ color: #032C4B;
         transform: translate(0 -50%);
         left: 0;
         bottom: -22px;
-        height: 2px;
+        height: 3px;
         width: 100%;
         background: #FFEBC3;
         transition: 0.3s;
@@ -361,6 +361,7 @@ ul li ul:hover {
 .search-mobile {
   margin: 0 20px;
   position: relative;
+  z-index: 9;
 
   &::after {
     content: "";
@@ -393,6 +394,9 @@ ul li ul:hover {
     background: #FFFFFF;
     border: 0.9px solid #032C4B;
     border-radius: 2px;
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -941,6 +945,28 @@ margin-bottom: 70px;
   text-align: center;
   transition: 0.3s;
 
+  &__icon {
+  
+    margin: 0 auto;
+
+    &--active {
+      display: none;
+    }
+  }
+
+  .img-wrap {
+    width: 93px;
+    height: 93px;
+    margin: 0 auto;
+    display: flex;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
   &::after {
     content: url("../img/icons/triengle.svg");
     position: absolute;
@@ -982,6 +1008,16 @@ margin-bottom: 70px;
 .figures-item:hover {
   border: 4px solid #032C4B;
 }
+
+
+.figures-item:hover .figures-item__icon{
+  display: none;
+}
+
+.figures-item:hover .figures-item__icon--active {
+  display: block;
+}
+
 
 .figures-item:hover::after {
   transition: 0.3s;
@@ -1333,7 +1369,14 @@ margin-bottom: 20px;
   details {
     padding: 9px 21px;
     border-bottom: 1px solid #C4C4C4;
+    user-select: none;     
+
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
   }
+
   summary {
     display: flex;
     align-items: center;
@@ -1346,7 +1389,11 @@ margin-bottom: 20px;
     line-height: 109.6%;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-   
+
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
   }
 
   summary img {
