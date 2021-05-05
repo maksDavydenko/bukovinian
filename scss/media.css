@@ -176,6 +176,10 @@
         -ms-flex-align: center;
             align-items: center; }
 
+  ul li ul {
+    opacity: 1;
+    visibility: visible; }
+
   .drop-down-l-2 {
     position: static;
     margin-left: -20px;

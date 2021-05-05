@@ -719,7 +719,12 @@ ul li ul:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 30vw; }
+  width: 90%; }
+  .modal-content img {
+    max-width: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
@@ -1106,6 +1111,9 @@ ul li ul:hover {
 
 .form-block {
   position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
   position: sticky;
   bottom: 0;
   padding: 11px 0;
