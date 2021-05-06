@@ -24,7 +24,6 @@ dropDownArrow.forEach(element => {
 
     list.forEach(item => {
         if(item.classList.contains('drop-down')) {
-            console.log(item);
             item.style.display === "block" ?  item.style.display = 'none':   item.style.display = 'block'
             return;
         }
